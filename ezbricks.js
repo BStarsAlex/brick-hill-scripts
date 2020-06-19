@@ -28,6 +28,6 @@ for (brick in Game.world.bricks) {
 	if (brickobj.name.includes("(deadly)")) {
 		Game.world.bricks[brick].touching(debounce((player) => {
 			player.kill()
-		}), 1000)
+		}), 500)
 	}
 }
