@@ -4,7 +4,7 @@ Some scripts I have made for Brick Hill (node-hill).
 These scripts are intended to be used with Brick Hill's NodeJS hosting software node-hill.
 To use these scripts, put them into your `user-scripts` folder, and follow the instructions provided here for each one.
 
-The "Required Scripts" section shows the entry you must add to your start.js sandbox section for the script to work. For example, if it contains the line `Discord: require('discord.js')`, you must modify `sandbox` to reflect. (shown in the line below)
+The "Required Packages" section shows the entry you must add to your start.js sandbox section for the script to work. For example, if it contains the line `Discord: require('discord.js')`, you must modify `sandbox` to reflect. (shown in the line below)
 
 For example, if your sandbox table contains nothing (`sandbox: {}`), you must change it to this:
 ```javascript
@@ -25,7 +25,7 @@ Additionally, if you do not have the package installed (in the parenthesis of `r
 
 For example, if `Discord: require('discord.js')` is required, you must take the text inside the parenthesis (without the single quotes) and put it after `npm install` on your command line, like so: `npm install discord.js`
 ## Dynamic Pads (dynamicpads.js)
-**Required Scripts**:
+**Required Packages**:
 - None
 
 This script enables you to quickly and easily create bricks that change the speed of anyone who touches them.
