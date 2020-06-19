@@ -24,6 +24,11 @@ sandbox: {
 Additionally, if you do not have the package installed (in the parenthesis of `require('package_name')`), you must install it using the Node Package Manager (npm) to install it.
 
 For example, if `Discord: require('discord.js')` is required, you must take the text inside the parenthesis (without the single quotes) and put it after `npm install` on your command line, like so: `npm install discord.js`
+## Discord Interface (discordinterface.js)
+**Required Packages**:
+- `Discord: require('discord.js')`
+
+This script creates a bridge between a specified discord channel and your Brick Hill game's chat. To use the script, you will need to go to [Discord's Developer Portal](https://discord.com/developers/applications), and create an application and make it into a bot. After that, you will need to grab the bot's token and put it in between the quotation marks at the end of the discordinterface.js file. After doing so, you must enable Developer Mode in your Discord Settings, and right click the channel you would like to bridge, and click "Copy ID". After that, go into discordinterface.js, and put it in between the quotation marks in front of `monitorchannelID`. The bridge should start up with your game.
 ## Dynamic Pads (dynamicpads.js)
 **Required Packages**:
 - None
