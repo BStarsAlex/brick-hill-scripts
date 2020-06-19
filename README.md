@@ -29,18 +29,22 @@ For example, if `Discord: require('discord.js')` is required, you must take the 
 - `Discord: require('discord.js')`
 
 This script creates a bridge between a specified discord channel and your Brick Hill game's chat. To use the script, you will need to go to [Discord's Developer Portal](https://discord.com/developers/applications), and create an application and make it into a bot. After that, you will need to grab the bot's token and put it in between the quotation marks at the end of the discordinterface.js file. After doing so, you must enable Developer Mode in your Discord Settings, and right click the channel you would like to bridge, and click "Copy ID". After that, go into discordinterface.js, and put it in between the quotation marks in front of `monitorchannelID`. The bridge should start up with your game.
-## Dynamic Pads (dynamicpads.js)
+## EZ Bricks (ezbricks.js)
 **Required Packages**:
 - None
 
-This script enables you to quickly and easily create bricks that change the speed of anyone who touches them.
-To create a pad, create any brick named "`[type]pad-#`", substituting the "`[type]`" for the stat you would like to modify (e.g "speedpad"), and the number for the amount you would like.
+This script enables you to quickly and easily create special bricks that perform a function on the player when touched. (e.g change speed, kill player)
+### Statpads
+Statpads are EZ bricks that change the stats of anyone who touches them.
+To create a statpad EZ brick, create any brick named "`[type]pad-#`", substituting the "`[type]`" for the stat you would like to modify (e.g "speedpad"), and the number for the amount you would like.
 For example, to create a pad that doubles a player's speed, you would name a brick "`speedpad-10`". To make a brick that reverses the effect, name it "`speedpad-5`".
-### Speedpads
+#### Speedpads
 Speedpads increase the player's speed when stepped on. Default is 4.
 
 Example: Name a brick `speedpad-10` to double the player's speed when touched.
-### Jumppads
+#### Jumppads
 Jumppads increase the player's jump height when stepped on. Default is 5.
 
 Example: Name a brick `jumppad-10` to double the player's jump height when touched.
+### Misc
+- Kill Bricks: Kills any player that touches them. Useful for obbies. To create one, include "`(deadly)`" in any part of the brick's name.
