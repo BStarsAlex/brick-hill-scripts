@@ -14,10 +14,11 @@ Game.on("playerJoin", async (p) => {
                 banlist.push(usernameToAdd);
                 
                 // Kick the player with the specified username
-                const playerToKick = Game.getPlayerByName(usernameToAdd);
-                if (playerToKick) {
-                    playerToKick.kick("You're banned, dude!");
-                }
+                Game.players.forEach((playerToKick) => {
+                    if (playerToKick.username === usernameToAdd) {
+                        playerToKick.kick("You're banned, dude!");
+                    }
+                });
             } else if (command === "/banlist" && args[1] === "remove") {
                // Remove "/banlist remove " from the message
                const usernameToRemove = args.slice(2).join(" ");
