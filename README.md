@@ -48,3 +48,12 @@ Jumppads increase the player's jump height when stepped on. Default is 5.
 Example: Name a brick `jumppad-10` to double the player's jump height when touched.
 ### Misc
 - Kill Bricks: Kills any player that touches them. Useful for obbies. To create one, include "`(deadly)`" in any part of the brick's name.
+## Banlist (banlist.js)
+**Required Packages**:
+- None
+
+This script allows you to ban people, in the future it will use an API to store the banlist (*if it is possible*), but for now it's in the script
+### Commands
+`/banlist help` this command will show the other commands.
+`/banlist add username` this is pretty straight forward, this will ban the user.
+`/banlist remove username` this is also pretty straight forward, this will unban the user.
