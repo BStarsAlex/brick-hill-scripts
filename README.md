@@ -54,6 +54,6 @@ Example: Name a brick `jumppad-10` to double the player's jump height when touch
 
 This script allows you to ban people, in the future it will use an API to store the banlist (*if it is possible*), but for now it's in the script
 ### Commands
-`/banlist help` this command will show the other commands.
-`/banlist add username` this is pretty straight forward, this will ban the user.
-`/banlist remove username` this is also pretty straight forward, this will unban the user.
+`.banlist help` this command will show the other commands.
+`.banlist add username` this is pretty straight forward, this will ban the user.
+`.banlist remove username` this is also pretty straight forward, this will unban the user.
